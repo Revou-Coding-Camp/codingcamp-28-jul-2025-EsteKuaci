@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1><img src="./image/Gancustom-profil.png" alt="Gancustom"></h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#facilities">Our Product</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="banner">
+    <div class="welcome">
+      <h1 id="greeting">Hi, Welcome to Our Website</h1>
+      <p>Ini adalah website latihan pertama</p>
+    </div>
+    <div class="banner-image">
+      <img src="./image/CPH002.png" alt="Banner Image" />
+    </div>
+  </section>
+
+    <section id="profile">
+      <div class="photo-banner">
+        <img src="./image/Gancustom.png" alt="Company Banner" />
+      </div>
+      <div class="about">
+        <h2>About the Company</h2>
+        <p>GanCustom is an online store that offers custom printing services for cases, mugs, and t-shirts. Customers are free to choose designs that are unique, personal, and expressive.</p>
+      </div>
+      <div class="vision-mission">
+        <h2>Vision</h2>
+        <p>The top choice for creative, high-quality custom products in Indonesia.</p>
+        <h2>Mission</h2>
+        <ul>
+          <li>Providing easy and flexible custom design services</li>
+          <li>Prioritizing product quality and print results</li>
+          <li>Providing fast and friendly service</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="facilities">
+        <h2>Our Product</h2>
+        <div class="facilities">
+          <div class="facility">
+            <div class="circle" style="background-image: url('./image/handphone.png')"></div>
+            <p>Custom Case</p>
+          </div>
+          <div class="facility">
+            <div class="circle" style="background-image: url('./image/mug.png')"></div>
+            <p>Custom Mug</p>
+          </div>
+          <div class="facility">
+            <div class="circle" style="background-image: url('./image/shirt.png')"></div>
+            <p>Custom T-Shirt</p>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact">
+      <h2>Message Us</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="inputName" placeholder="Nama" required />
+        <input type="date" id="inputDate" required />
+        <div>
+          <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
+        </div>
+        <textarea id="inputMessage" placeholder="Pesan" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formOutput"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Our Company. All rights reserved.</p>
+    <p style="text-align: right; margin-right: 1rem;">Created by Ardiansyah</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
